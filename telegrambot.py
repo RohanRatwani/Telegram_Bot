@@ -14,7 +14,7 @@ def off(pin):
 # to use Raspberry Pi board pin numbers
 GPIO.setmode(GPIO.BOARD)
 # set up GPIO output channel
-GPIO.setup(11, GPIO.OUT)
+GPIO.setup(18, GPIO.OUT)
 
 def handle(msg):
     chat_id = msg['chat']['id']
@@ -23,11 +23,11 @@ def handle(msg):
     print('Got command: %s' % command)
 
     if command == 'on':
-       bot.sendMessage(chat_id, on(11))
+       bot.sendMessage(chat_id, on(18))
     elif command =='off':
-       bot.sendMessage(chat_id, off(11))
+       bot.sendMessage(chat_id, off(18))
 
-bot = telepot.Bot('Bot Token')
+bot = telepot.Bot('1033013602:AAFwyWhCVdbg1dKL-HC_Oy4aYZtup_8IUWg')
 bot.message_loop(handle)
 print('I am listening...')
 
@@ -43,3 +43,4 @@ while 1:
     except:
         print('Other error or exception occured!')
         GPIO.cleanup()
+
