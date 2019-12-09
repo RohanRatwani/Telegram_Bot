@@ -38,5 +38,5 @@ Professor :- Dr.Kevin Lu
     
     Code :- python telegrambot.py
   
- For full description with screenshot please refer pdf file included in git repository
+ For full description with screenshot please refer ppt file included in git repository
     
