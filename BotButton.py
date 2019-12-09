@@ -1,5 +1,3 @@
-
-#coder :- Salman Faris
 #Connect button on pin number GPIO12
 
 import sys
